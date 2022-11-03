@@ -1,8 +1,9 @@
 {% extends 'base.html' %}
-{% block title %}Список городов{%  endblock %}
+{% block title %}Создание города{%  endblock %}
 
 {% block content %}
-<h1>Список городов</h1>
+<h1>Создание города</h1>
+
     <div class="row">
         <div class="col-md">
             {% for object in objects_list %}
@@ -18,7 +19,7 @@
             {{ form.as_p }}
             {#  <label for="fname">Город:</label><br>#}
             {#  <input type="text" id="fname" name="fname"><br>#}
-            <input type="submit" value="Submit">
+            <button type="submit" class="btn btn-danger">Сохранить</button>
             </form>
         </div>
     </div>
